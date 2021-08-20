@@ -100,15 +100,15 @@ body{
     border-bottom: whitesmoke 3px solid;
 }
 
-show-menu #linha2{
+.show-menu #linha2{
     opacity: 0;
     visibility: hidden;
 }
 
-show-menu #linha1{
+.show-menu #linha1{
     transform: rotate(45deg)  translate(0.6rem, 0.45rem );
 }
 
-show-menu #linha3{
+.show-menu #linha3{
     transform: rotate(-45deg) translate(0.6rem, -0.45rem )
 }
