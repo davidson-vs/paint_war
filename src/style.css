@@ -5,3 +5,9 @@
     list-style: none;
     text-decoration: none;
 }
+
+:root{
+    --title: 'Oswald', sans-serif;
+    --subtitle: 'Poppins', sans-serif;
+    --text:  'Roboto', sans-serif;
+}
