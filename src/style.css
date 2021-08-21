@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;0,800;1,900&display=swap');
-
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.0/css/all.min.css");
 *{
     padding: 0;
     margin: 0;
@@ -123,6 +123,15 @@ body{
     justify-content: space-around;
 }
 
+@keyframes entrada{
+    0%{
+        opacity: 0; 
+        transform: translateX(-10rem);   
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 .conteudo{
     margin-top: 7rem;
@@ -133,7 +142,11 @@ body{
     font-family: var(--subtitle);
     font-size: 2.5rem;
     font-weight: 900;
-    letter-spacing: 2px;
+    letter-spacing: 2px;    
+}
+
+.conteudo h2{
+    animation: entrada 2.5s ;
 }
 
 .conteudo h2:nth-child(2){
@@ -142,6 +155,37 @@ body{
 
 #diferente{
     color: darkred;
+}
+
+.conteudo p{
+    font-size: 1.5rem;
+    font-family: var(--text);
+    font-weight: 700;
+    padding-bottom: .5rem;
+    color: rgb(206, 197, 197);
+    animation: entrada 3.5s ;
+}
+
+.conteudo button{
+    width: 15rem;
+    height: 3.5rem;
+    margin-top: 3rem;
+    margin-left: 4rem;
+    font-size: 1.2rem;
+    font-family: var(--text);
+    border-radius: 15px;
+    border: 3px solid black;
+    background-image: url('../images/bg.jpg') ;
+    background-size: cover;
+    color: blanchedalmond;
+    cursor: pointer;
+    transition: 0.7s;
+    animation: entrada 4.5s ;
+}
+
+.conteudo button:hover{
+    opacity: 0.8;
+    background-image: url('../images/bg_menu.jpg');
 }
 
 .logo{
@@ -171,3 +215,40 @@ body{
     position: absolute;z-index: -1;
     border-radius: 50%;
 }
+
+footer{
+    width: 100%;
+    height:2rem ;
+    margin-top: -2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+footer .links{
+    width: 10rem;
+    display: flex;
+    justify-content: space-between;
+    color: blanchedalmond;
+    align-items: center;
+}
+
+footer .links a{
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: black;
+    background-color: blanchedalmond;
+    cursor: pointer;
+    z-index: 10;
+    transition: 0.7s;
+}
+
+footer .links a:hover{
+    transform: scale(1.2);
+}
+
