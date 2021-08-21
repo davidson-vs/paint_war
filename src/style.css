@@ -214,6 +214,7 @@ body{
     background-color: rgb(8, 8, 8);
     position: absolute;z-index: -1;
     border-radius: 50%;
+    border: dimgray 5px solid;
 }
 
 footer{
