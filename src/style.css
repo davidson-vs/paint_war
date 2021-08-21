@@ -123,6 +123,15 @@ body{
     justify-content: space-around;
 }
 
+@keyframes entrada{
+    0%{
+        opacity: 0; 
+        transform: translateX(-10rem);   
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 .conteudo{
     margin-top: 7rem;
@@ -133,7 +142,11 @@ body{
     font-family: var(--subtitle);
     font-size: 2.5rem;
     font-weight: 900;
-    letter-spacing: 2px;
+    letter-spacing: 2px;    
+}
+
+.conteudo h2{
+    animation: entrada 2.5s ;
 }
 
 .conteudo h2:nth-child(2){
@@ -150,6 +163,7 @@ body{
     font-weight: 700;
     padding-bottom: .5rem;
     color: rgb(206, 197, 197);
+    animation: entrada 3.5s ;
 }
 
 .conteudo button{
@@ -166,6 +180,7 @@ body{
     color: blanchedalmond;
     cursor: pointer;
     transition: 0.7s;
+    animation: entrada 4.5s ;
 }
 
 .conteudo button:hover{
@@ -230,8 +245,10 @@ footer .links a{
     background-color: blanchedalmond;
     cursor: pointer;
     z-index: 10;
+    transition: 0.7s;
 }
 
 footer .links a:hover{
     transform: scale(1.2);
 }
+
